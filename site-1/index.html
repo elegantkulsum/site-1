@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       #grid{
+        width: 90%;
+        margin: auto;
+       }
+    </style>
+</head>
+<body>
+
+     <!--------video 14-5 number - nicher comment gula class 14-5 e dekhiyeche-->
+<!-----------------tailwind.config.js ei file innteligence mane ei tailwind er class ba property gula ke recommend korbe
+    
+    
+    je folder e kaj korbo sei folder er vetore index file er opore niche dilei hobe----->
+    <!-------------shortcut kaj na korle ctrl+space press korlei asbe--------->
+
+
+
+<!--------video 14-4 number --->
+
+
+
+
+    <!-- <section id="grid" class="container mx-auto grid grid-cols-3 bg-blue-200 width-50 margin-auto gap-4">
+        <div class="bg-purple-400 p-4 col-span-3 ">1</div>
+        <div class="bg-purple-400 p-4 row-span-2 col-span-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores quia cum ex natus excepturi obcaecati vero. Voluptas minima modi esse asperiores beatae eaque quasi, nihil aut ullam adipisci ipsum. Velit a eum esse, labore dignissimos explicabo dolor hic, doloribus, atque ipsam cumque mollitia? Dolore laborum corporis modi libero blanditiis ea iusto. Autem quod vero beatae consequatur non voluptatum, alias ipsa nisi veniam eveniet! Sit sequi veritatis amet ab recusandae libero vitae quibusdam at repellendus similique, fugiat, sapiente cupiditate minus ex. Voluptatum animi dolorem placeat ipsum minima ipsam esse quidem possimus, quaerat veniam, eum, sequi dicta. Sunt vero dolor placeat.</div>
+        <div class="bg-purple-400 p-4 row-span-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tempora cupiditate odit aspernatur, ipsam doloremque sed atque laboriosam repudiandae enim culpa ab asperiores consequuntur. Quis saepe voluptatum quod! Laborum a expedita et aut mollitia in optio incidunt, laboriosam, dicta exercitationem ea autem veritatis sit quo deleniti. Perferendis explicabo, ut libero placeat modi expedita earum, non cumque a quis impedit fuga adipisci voluptatibus tempora veritatis amet blanditiis doloremque quidem harum fugit, molestias at et ipsum. Soluta consectetur distinctio assumenda laboriosam, ipsa sapiente, cum est provident laudantium suscipit quod dolores! Officiis praesentium illo veritatis fugit perferendis atque dolorem cum minus, ipsa ut consequuntur alias itaque expedita. Aut enim quam illum vitae, qui et dicta esse iure quis modi, expedita ex, deleniti cupiditate sunt aliquid repellendus ea minima! Odit eveniet quibusdam quod maxime laborum illo quaerat quae. Laborum magnam numquam, ad repudiandae minima ex magni eligendi debitis unde repellendus porro ea eveniet error!</div>
+        <div class="bg-purple-400 p-4 col-span-3">1</div>
+    </section> -->
+
+
+
+    <!--------video 14-6 number --->
+    <!-- jodi kono color tailwind e na thake tahole sei color er Hex color er code ta ke ene bg-[#33333] ei vabe lekhte parbo.
+    but eta good way na kaj korar khetre -->
+
+
+
+    <!--------video 14-7 number --->
+    <!-- css ba bootstrap vartical vabe center e anete use kortam( align-items-center) but tailwind e use korbo (items-center) -->
+    
+    <!-- IMG -->
+    <!-- kono ekta image ke responsive korte caile img er class e jeye (class="w-1/2 sm:w-full") first w-1/2 er mane boro device er jonno div er ja width thakbe tar half nobe ar porer ta (small device er jonno sei div er full width nibe) -->
+    
+    <!-- TEXT -->
+    <!-- text ke responsiove korar jonno (class="text-2xl sm:text-5xl") -->
+
+<!--------video 14-8 number --->
+<main>
+
+<!-- 
+    1)tailwind e font-size, round, er jonno sm ,lg, xl emonkore dite hoy 
+
+    2) responsive er grid korte hobe (grid-cols-3) 
+    OPTION: A) col na diye cols dite hobe
+            B) je koyta column nite cai sei koyta cols bole dite hobe
+            c) resonsive er jonno just 2 ta device dite hobe
+                1) lg means large like (lg:grid-cols-3) emon
+                2) md means medium device like (md:grid-cols-2) mane 2ta colum e dekhte cai emon
+    3) (css ba bootstrape) kono kichu ke (horijontali middle) e nite likhtam justify-content-center 
+        --- but (tailwind) e hobe just justify-center
+    
+    4) (css ba bootstrap) e (varticaly middle nite) use kortam (align-items-center)
+        --- but (tailwind) e use korbo just (items-center)
+
+    5) img text ke responsive er jonno large device er jonno ja ache tai rakhbo ar mobile er jonno alada kore( md:text-3xl ba md:img-100 )emon kore dibo
+    
+-->
+
+    <!-- Woment Jacket Start -->
+    <section class="ladies mt-5">
+        <div class="container mx-auto">
+            <div class="title mb-10">
+                <h1 class="section-title uppercase text-5xl sm:text-4xl font-bold">W0Man Jacket</h1>
+            </div>
+            <div class="ladies-item grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Jecket-1 -->
+                <div class="ladies-box shadow-2xl p-5 rounded-md ">
+                    <div class="ladies-img  bg-slate-200 p-3 rounded-lg">
+                        <img src="/site-1/images/jacket-1.png" alt="" class="dress-img">
+                    </div>
+                    <div class="dress-info space-y-3  p-5">
+                        <h3 class="text-3xl font-bold dress-title">Snowboard Jacket Mens</h3>
+                        <p class="dress-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="text-2xl font-bold price">$234</h2>
+                                <button class="btn bg-green-700 py-3 px-5 rounded-full text-white">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                   </svg> 
+    
+                                  BUY NOW</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jecket-2 -->
+                <div class="ladies-box shadow-2xl p-5 rounded-md ">
+                    <div class="ladies-img  bg-slate-200 p-3 rounded-lg">
+                        <img src="/site-1/images/jacket-2.png" alt="" class="dress-img">
+                    </div>
+                    <div class="dress-info space-y-3 p-5 ">
+                        <h3 class="text-3xl font-bold dress-title">Snowboard Jacket Mens</h3>
+                        <p class="dress-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="text-2xl font-bold price">$234</h2>
+                                <button class="btn bg-green-700 py-3 px-5 rounded-full text-white">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                   </svg> 
+    
+                                  BUY NOW</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jecket-3 -->
+                <div class="ladies-box shadow-2xl p-5 rounded-md">
+                    <div class="ladies-img  bg-slate-200 p-3 rounded-lg">
+                        <img src="/site-1/images/jacket-3.png" alt="" class="dress-img">
+                    </div>
+                    <div class="dress-info space-y-3 p-5">
+                        <h3 class="text-3xl font-bold dress-title">Snowboard Jacket Mens</h3>
+                        <p class="dress-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="text-2xl font-bold price">$234</h2>
+                                <button class="btn bg-green-700 py-3 px-5 rounded-full text-white">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                   </svg> 
+    
+                                  BUY NOW</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- Man Jacket Start -->
+    <section class="man my-24">
+        <div class="container mx-auto">
+            <div class="title mb-10 px-5">
+                <h1 class="section-title uppercase font-bold text-5xl sm:text-4xl">Man Jacket</h1>
+            </div>
+            <div class="man-items grid md:grid-cols-2 lg:grid-cols-3 items-center  justify-center gap-10">
+                <!-- 1st Man Jacket -->
+                <div class="man-box shadow-lg p-5 rounded-md">
+                    <div class="man-dress bg-slate-200 p-5 rounded-lg">
+                        <img class="" src="/site-1/images/jacket-4.png" alt="" class="man-img">
+                    </div>
+                    <div class="man-jak-info space-y-3 p-5">
+                        <h3 class="man-jak-title text-3xl font-bold">Man Leather Jackets</h3>
+                        <p class="man-jak-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="price text-3xl font-bold">$234</h2>
+                                <button class="btn bg-green-700 text-white py-3 px-5 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                      </svg>
+                                    BUY NOW
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                 <!-- 2nd Man Jacket -->
+                 <div class="man-box shadow-lg p-5 rounded-md">
+                    <div class="man-dress bg-slate-200 p-5 rounded-lg">
+                        <img class="" src="/site-1/images/jacket-5.png" alt="" class="man-img">
+                    </div>
+                    <div class="man-jak-info space-y-3 p-5">
+                        <h3 class="man-jak-title text-3xl font-bold">Man Leather Jackets</h3>
+                        <p class="man-jak-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="price text-3xl font-bold">$234</h2>
+                                <button class="btn bg-green-700 text-white py-3 px-5 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                      </svg>
+                                    BUY NOW
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                 <!-- 3rd Man Jacket -->
+                 <div class="man-box shadow-lg p-5 rounded-md">
+                    <div class="man-dress bg-slate-200 p-5 rounded-lg">
+                        <img class="" src="/site-1/images/jacket-6.png" alt="" class="man-img">
+                    </div>
+                    <div class="man-jak-info space-y-3 p-5">
+                        <h3 class="man-jak-title text-3xl font-bold">Man Leather Jackets</h3>
+                        <p class="man-jak-des text-lg">Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="price-btn flex justify-between flex-wrap">
+                                <h2 class="price text-3xl font-bold">$234</h2>
+                                <button class="btn bg-green-700 text-white py-3 px-5 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                      </svg>
+                                    BUY NOW
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+
+
+</body>
+</html>

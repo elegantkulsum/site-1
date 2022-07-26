@@ -1,0 +1,10 @@
+video 14-4
+tailwind er grid 
+grid-cols-3
+(gap)
+gap-0 ba gap-x-2 emon kore hobe
+(grid er modde span)
+er kaj ta onek ta  css grid er moto. every span ekta kore grid er soman hobe. (suppose ami 3 ta grid nilam. ekhon first gird ke jodi barate cai tahole span dile oi grid er modde se 1 ta grid soman boro hoye jabe 2 ta span nile 2 ta grid er soman hoye jabe just likhte hobe(col-span-2)
+
+ekhon same kaj ta abar row teo korte pari. ager ta chilo col means column same kaj tai hobe
+
